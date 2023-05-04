@@ -17,7 +17,8 @@ struct ModDetails {
     char category[];
     char version[];
     char description[];
-    char modLink[];
+    if (parent.file_structure_version >= 5)
+        char modLink[];
 };
     
 struct BaseModResource {
