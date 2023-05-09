@@ -101,7 +101,7 @@ struct ModDefinition {
 struct ResourceDataPosition {
     u64 offset;
     u64 size;
-}[[name(std::format("[{}]: {}", std::core::array_index(), parent.resource_index[std::core::array_index()].resource.name))]];
+}[[name(std::format("[{}]", std::core::array_index()))]];
     
 struct NonCompressedResourceData<auto size> {
     u8 data[size];
